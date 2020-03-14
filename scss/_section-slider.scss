@@ -1,0 +1,45 @@
+.carousel-indicators .active {
+  background-color: #fff;
+}
+.section-carousel {
+  .carousel-block {
+    width: 40%;
+    height: 90%;
+    background: $red;
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 3%;
+    overflow: hidden;
+    color: #ffffff;
+  }
+}
+  .carousel-block h2, .carousel-block p{
+    margin: 5%;
+  }
+  .section-carousel-indicators {
+    right: 58%;
+    bottom: 15%;
+    margin: 0;
+  }
+  .section-carousel-next{
+    top: 86%;
+    left: 52%;
+    width: 4%;
+    height: 10%;
+    background: $red;
+    border-radius: 50%;
+    margin-left: 2%;
+  }
+  .section-carousel-prev {
+    top: 86%;
+    left: 48%;
+    width: 4%;
+    height: 10%;
+    background: $red;
+    border-radius: 50%;
+  }
+  .section-carousel-control-icon{
+    width: 60%;
+    height: 60%;
+  }

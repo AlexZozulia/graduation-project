@@ -1,0 +1,32 @@
+.section-help{
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 133px;
+}
+.post {
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 1px 5px 10px rgba(0,0,0,0.15);
+}
+.section-help img {
+  margin-top: 39px;
+  margin-left: 15px;
+}
+.section-help h5, .section-help p{
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.section-help p{
+  color: $texVeryDrGray;
+}
+.section-help h5{
+  color: $sineGoluboy;
+}
+
+.help h4{
+  color: $textRed;
+  padding-top: 51px;
+  padding-bottom: 29px;
+}
