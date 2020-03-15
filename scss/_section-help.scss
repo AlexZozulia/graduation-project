@@ -1,6 +1,5 @@
 .section-help{
   height: 300px;
-  overflow: hidden;
   margin-bottom: 133px;
 }
 .post {
@@ -10,9 +9,11 @@
   height: 100%;
   box-shadow: 1px 5px 10px rgba(0,0,0,0.15);
 }
-.section-help img {
+.section-help span[class^=icon], .section-help img {
+  font-size: 4rem;
   margin-top: 39px;
   margin-left: 15px;
+  display: inline-block;
 }
 .section-help h5, .section-help p{
   margin-top: 25px;
