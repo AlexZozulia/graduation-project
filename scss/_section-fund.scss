@@ -5,8 +5,8 @@
     }
 
     h3 {
-      @include fon($fonPoppins, 30px, $textblack);
-      font-weight: bold;
+      @include fonBold($fonPoppins, 30px, $textblack);
+
       margin-bottom: 10px;
     }
 
@@ -42,8 +42,7 @@
       }
 
       h6 {
-        @include fon($fonPoppins, 20px, $sineGoluboy);
-        font-weight: bold;
+        @include fonBold($fonPoppins, 20px, $sineGoluboy);
       }
 
       p {
@@ -58,5 +57,10 @@
         background: rgba(185, 170, 167, 0.13);
       }
     }
+  }
+  button {
+    background: $bgButton;
+    box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.3);
+    margin: 79px 0px;
   }
 }

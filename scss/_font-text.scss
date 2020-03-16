@@ -6,3 +6,9 @@ $fonNunitoSans: Nunito Sans, BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,A
   font-size: $fontSize;
   color: $color;
 }
+@mixin fonBold ($fontFamily, $fontSize, $color){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color;
+  font-weight: bold;
+}

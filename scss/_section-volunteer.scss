@@ -1,0 +1,25 @@
+.section-volunteer{
+  background: url("../img/Group 621.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+    .section-volunteer-content {
+      h4 {
+        @include fonBold($fonPoppins, 30px, $textWhite);
+        margin-top: 120px;
+      }
+      h1 {
+        @include fonBold($fonPoppins, 60px, $textWhite);
+        margin-bottom: 90px;
+      }
+      p {
+        @include fon($fonNunitoSans, 18px, $textWhite);
+        margin-top: 120px;
+      }
+      button {
+        background: $bgWhite;
+        color: $textRed;
+        margin-top: 60px;
+        margin-bottom: 120px;
+      }
+    }
+}
