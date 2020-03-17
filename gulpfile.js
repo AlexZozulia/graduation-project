@@ -21,6 +21,7 @@ const cssFiles = [
 
 //Порядок подключения JS файлов
 const jsFiles = [
+    './src/js/616a422fe3.js',
     './src/js/lib.js',
     './src/js/main.js'
 ];
