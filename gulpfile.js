@@ -21,8 +21,10 @@ const cssFiles = [
 
 //Порядок подключения JS файлов
 const jsFiles = [
+    './src/js/jquery-3.4.1.js',
+    './src/js/popper.min.js',
+    './src/js/bootstrap.min.js',
     './src/js/616a422fe3.js',
-    './src/js/lib.js',
     './src/js/main.js'
 ];
 
@@ -66,7 +68,7 @@ function scripts() {
         .pipe(gulp.dest('./build/js/'))
         .pipe(browserSync.stream());
 }
-
+//Задача Sass: компилирует файл style.scss в style.css
 // Sass task: compiles the style.scss file into style.css
 function scssTask() {
     return gulp.src(files.scssPath)
@@ -109,10 +111,9 @@ gulp.task('scripts', scripts);
 gulp.task('del', clean);
 //Таск для отслкживаня изменений
 gulp.task('watch', watch);
-// Export the default Gulp task so it can be run
-// Runs the scss and js tasks simultaneously
+//Таск вызывающий функцию scssTask
 gulp.task('scssTask', scssTask);
 //Таск для удаления файлов в папке build и запуск styles и scripts
 gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
-//Таск запускает таск build и watch
+//Таск запускает таск build, scssTask  и watch
 gulp.task('dev', gulp.series('build', 'scssTask', 'watch'));

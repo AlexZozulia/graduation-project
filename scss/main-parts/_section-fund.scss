@@ -1,7 +1,7 @@
 .section-fund {
   .section-fund-left {
     h4 {
-      @include fon($fonNunitoSans, 20px, $textRed);
+      @include fonBold($fonNunitoSans, 20px, $textRed);
     }
 
     h3 {
@@ -11,7 +11,7 @@
     }
 
     h5 {
-      @include fon($fonPoppins, 20px, #495057);
+      @include fonBold($fonPoppins, 20px, #495057);
       font-style: italic;
       margin-bottom: 20px;
     }

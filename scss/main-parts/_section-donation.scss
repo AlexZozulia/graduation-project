@@ -1,0 +1,45 @@
+.section-donation {
+  background: #ffffff;
+
+  .section-donation-content {
+    margin-top: 135px;
+
+    .section-donation-content-text {
+      h4 {
+        @include fonBold($fonPoppins, 30px, #1D252D);
+        margin-bottom: 25px;
+      }
+
+      p {
+        @include fon($fonNunitoSans, 14px, #1D252D);
+        margin-bottom: 12px;
+      }
+    }
+
+    .section-donation-content-funded {
+      margin-top: 30px;
+
+      .section-donation-content-funded-card {
+          border: none;
+          box-shadow: 0px 6px 12px rgba(17, 23, 29, 0.16);
+        span {
+          margin-top: 28px;
+          margin-bottom: 15px;
+          font-size: 60px;
+          color: $bgIconDon
+        }
+
+        h6 {
+          @include fon($fonPoppins, 26px, #11171D);
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+
+        p {
+          @include fon($fonNunitoSans, 16px, #1D252D);
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
+}
