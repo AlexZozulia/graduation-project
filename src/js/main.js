@@ -13,26 +13,13 @@ function lineBuilder(line){
             trailWidth: 4,
             svgStyle: {width: '100%', height: '100%'},
             from: {color: '#FF0000'},
-            to: {color: '#FF0000'},
-            text: {
-                style: {
-                    // Text color.
-                    // Default: same as stroke color (options.color)
-                    color: '#999',
-                    position: 'absolute',
-                    left: '0',
-                    top: '30px',
-                    padding: 0,
-                    margin: 0,
-                    transform: null
-                },
-                autoStyleContainer: false
-            },
-            step: (state, bar) => {
-                bar.setText(Math.round(bar.value() * 100) + ' %');
-            }
+            to: {color: '#FF0000'}
         });
         bar.animate($(this).data('percent'));
+
+        let like_container = $(this).data('id');
+        $(like_container).css('left',Math.round($(this).data('percent') * 100) + "%");
+        $(like_container).children('.percent').text(Math.round($(this).data('percent') * 100) + "%");
     });
 }
 
