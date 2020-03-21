@@ -26,6 +26,7 @@ const jsFiles = [
     './src/js/bootstrap.min.js',
     './src/js/616a422fe3.js',
     './src/js/progressbar.min.js',
+    './src/js/lightbox.js',
     './src/js/main.js'
 ];
 
