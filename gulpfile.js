@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
+let uglify = require('gulp-uglify-es').default;
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -25,6 +25,7 @@ const jsFiles = [
     './src/js/popper.min.js',
     './src/js/bootstrap.min.js',
     './src/js/616a422fe3.js',
+    './src/js/progressbar.min.js',
     './src/js/main.js'
 ];
 
@@ -61,7 +62,7 @@ function scripts() {
     //Всей файлы по шаблону './src/js/**/*.js'
     return gulp.src(jsFiles)
         //Обьединение файлов в один
-        .pipe(concat('script.js'))
+        .pipe(concat('script.min.js'))
         //Минификация JS
         .pipe(uglify())
         //Выходная папка для скриптов
