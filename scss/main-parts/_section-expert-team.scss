@@ -1,0 +1,65 @@
+.expert-team{
+
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding-top: 118px;
+  .large-text {
+    margin-bottom: 50px;
+
+  }  .card-body{
+    text-align: center;
+
+    .icons-logo{
+      display: inline-block;
+
+      .fa-facebook-f{
+        background-color: #4267B2;
+        border-radius: 50%;
+        color: #ffff;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+      }
+      .fa-twitter{
+        background-color: #1DA1F2;
+        border-radius: 50%;
+        color: #ffff;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+
+      }
+      .fa-instagram {
+        background-color: #C1008A;
+        border-radius: 50%;
+        color: #ffff;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+      }
+      .fa-pinterest {
+        background-color: #BD081B;
+        border-radius: 50%;
+        color: #ffff;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;}
+
+    }
+
+  }
+
+  p{
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: -6px;
+  }
+  .btn{
+    margin-top: 40px;
+    border-radius: 0;
+    width: 146px;
+    height: 46px;
+  }
+
+}
