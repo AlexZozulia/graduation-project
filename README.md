@@ -1,4 +1,4 @@
 ﻿# Верстка "Выпускной проект "Litera IT курсы "
 
 ## Описание проекта:
-Использую bootstrap, gulp
+Использую bootstrap, gulp, иконки с fontawesome, LIGHTBOX.
