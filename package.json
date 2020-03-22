@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "acorn": ">=5.7.4",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "minimist": ">=1.2.2",
-    "acorn": ">=5.7.4"
+    "lightbox2": "^2.11.1",
+    "minimist": ">=1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.0",

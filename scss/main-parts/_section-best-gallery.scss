@@ -1,0 +1,39 @@
+.best-gallery{
+  background-color: #ffff;
+  margin-top: 120px;
+
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+    p {
+      overflow: hidden;
+      height: 50px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+  }
+    .span-gallery{
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: 20px ;
+      size: 130px;
+      padding-left: 450px;
+      .badge-pill:first-child{
+        color: #ffff;
+        box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .badge-pill{
+        height: 50px;
+        width: 80px;
+        padding-top: 19px;
+        margin-left: 25px;
+
+      }
+
+  }
