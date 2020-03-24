@@ -1,0 +1,127 @@
+.section-event {
+  background: url("../../img/bg_event.svg"), rgba(243, 245, 247, 0.95);
+  background-blend-mode: color;
+  .container {
+    h3 {
+      @include fonBold($fonPoppins, 30px, $sineGoluboy);
+      margin-top: 110px;
+    }
+
+    p {
+      @include fon($fonNunitoSans, 18px, $sineGoluboy);
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+
+    .section-event-content {
+      background: #ffffff;
+      margin-bottom: 50px;
+
+      .section-event-content-img {
+        img {
+          margin: 10px 0px;
+        }
+      }
+
+      .section-event-content-info {
+        h5 {
+          @include fonBold($fonPoppins, 16px, $sineGoluboy);
+          margin-top: 36px;
+        }
+
+        h4 {
+          @include fonBold($fonPoppins, 20px, $sineGoluboy);
+          margin-bottom: 20px;
+        }
+
+        p {
+          @include fon($fonNunitoSans, 14px, $sineGoluboy);
+          margin-bottom: 18px;
+        }
+      }
+
+      .section-event-content-info-time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        .info-time {
+          @include fon($fonPoppins, 14px, rgba(29, 37, 45, 0.71));
+          margin-right: 18px;
+        }
+
+        span {
+          margin-left: 5px;
+        }
+      }
+
+      .section-event-content-info-circle {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 35px;
+
+        .circles {
+          margin: 0px 10px;
+          position: relative;
+
+          .circle-days {
+            @include fon($fonPoppins, 16px, $sineGoluboy);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            padding: 0px;
+            margin: 0px;
+            transform: translate(-50%, -50%);
+
+            span {
+              font-weight: bold;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .section-event-content-organizer {
+        .section-event-content-organizer-content {
+          margin-top: 112px;
+          margin-bottom: 84px;
+          position: relative;
+
+          .organizer__img {
+            display: inline-block;
+          }
+
+          .organizer__name {
+            @include fon($fonPoppins, 14px, $sineGoluboy);
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            margin-left: 15px;
+
+            span {
+
+            }
+
+            h6 {
+              font-weight: bold;
+            }
+          }
+        }
+
+        button {
+          background: #11171D;
+          margin-bottom: 60px;
+
+          &:hover {
+            background: #ff2831;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .empty{
+      width: 100%;
+      height: 1px;
+    }
+  }
+}
