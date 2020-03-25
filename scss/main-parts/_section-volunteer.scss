@@ -19,6 +19,10 @@
         background: $bgWhite;
         color: $textRed;
         margin: 60px 0px 120px 0px;
+        &:hover {
+          background: #FF0000;
+          color: #ffffff;
+        }
       }
     }
 }

@@ -5,7 +5,26 @@
   font-weight: bold;
   border-radius: 0;
 }
+section {
+  background: #F3F5F7;
+}
+.header-contact {
+  color: #707070;
+  font-size: 14px;
+  span {
+    font-weight: bold;
+  }
+
+  i {
+    margin: 17px 8px;
+  }
+  a {
+    color: #707070;
+    text-decoration: none;
+  }
+}
 header{
+  background: #ffffff;
   .container{
     .navbar{
       .collapse{

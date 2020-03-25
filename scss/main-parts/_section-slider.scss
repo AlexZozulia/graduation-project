@@ -24,6 +24,50 @@
     left: 3%;
     overflow: hidden;
     color: #ffffff;
+
+    h2 {
+      font-size: 0.6rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 0.4rem;
+    }
+    @include media-breakpoint-up(sm) {
+      p {
+        font-size: 0.5rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      p {
+        font-size: 0.6rem;
+      }
+
+
+      @include media-breakpoint-up(lg) {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
   .carousel-block h2, .carousel-block p{

@@ -1,0 +1,57 @@
+.forms-volunteer {
+  .container {
+    h3 {
+      @include fonBold($fonPoppins, 30px, $sineGoluboy);
+      padding-top: 48px;
+      margin-bottom: 28px;
+    }
+
+    .forms-volunteer-content {
+      background: #ffffff;
+      padding-left: 23px;
+      .forms-volunteer__data {
+        margin-top: 40px;
+        margin-bottom: 43px;
+
+        .form-control {
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+          border-radius: 15px;
+          margin-bottom: 9px;
+        }
+
+        label {
+          @include fonBold($fonPoppins, 20px, $sineGoluboy);
+          margin-left: 10px;
+          margin-bottom: 0px;
+        }
+      }
+
+      .forms-volunteer__img {
+        h5 {
+          @include fon($fonPoppins, 20px, $sineGoluboy);
+          margin-top: 50px;
+          margin-bottom: 3px;
+          font-weight: 900;
+        }
+      }
+
+      .forms-volunteer__check {
+        margin: 43px 0px;
+        label {
+          @include fon($fonNunitoSans, 14px, $sineGoluboy);
+        }
+
+      }
+
+      button {
+        background: $bgButton;
+        margin-bottom: 60px;
+
+        &:hover {
+          background: #000000;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
