@@ -34,6 +34,18 @@ header{
         button{
           margin: 0px 20px;
         }
+        @include media-breakpoint-down(sm) {
+          button {
+            width: 100%;
+            margin: 10px 0px;
+          }
+        }
+        @include media-breakpoint-only(md) {
+          button {
+            width: 100%;
+            margin: 10px 0px;
+          }
+        }
       }
     }
   }
