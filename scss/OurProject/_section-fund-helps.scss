@@ -1,14 +1,17 @@
-.fund-helps {
+.fund-helps .container{
   font-family: 'Poppins', sans-serif;
   background-color: #F3F5F7;
-
   .steps-helps {
-    text-align: center;
-
     .row {
       margin: 50px auto;
     }
-
+    em{
+      border-radius: 50%;
+      background-color: red;
+      width: 35px;
+      height: 35px;
+      line-height: 2.8rem;
+    }
     .card {
       height: 305px;
       padding: 30px 10px;
@@ -26,10 +29,13 @@
         text-align: left;
       }
     }
-
     .carousel-control-next {
       position: static;
       opacity: 1;
     }
   }
+}
+.steps-helps{
+  text-align: center;
+  padding: 50px 0;
 }
