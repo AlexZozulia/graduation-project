@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
+    <link rel="stylesheet" href="skins/polaris/polaris.css">
     <link rel="stylesheet" href="dist/theme.css">
     <link rel="stylesheet" href="build/css/style.css">
 </head>
@@ -11,15 +12,16 @@
 <section class="header-contact">
     <div class="container">
         <div class="row header-contact">
-            <div class="col">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <i class="fas fa-phone-alt"></i>
                 <span>Call:</span> +48 (884) 335 443
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <i class="far fa-envelope"></i>
-                <span>Email:</span> contact@red.org.pl
+                <span>Email:</span> <a title="Send contact e-mail"
+                                       href="mailto:contact@red.org.pl">contact@red.org.pl</a>
             </div>
-            <div class="col-5 text-right ">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-right ">
                 <a href="#">
                     <i class="fab fa-twitter"></i>
                 </a>
@@ -54,7 +56,7 @@
                         <a class="nav-link header-nav-hover" href="ourProjects.html">наши проекты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-nav-hover active" href="vacancies-main.html">вакансии</a>
+                        <a class="nav-link header-nav-hover" href="vacancies-main.html">вакансии</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link header-nav-hover" href="partners.html">партнёры</a>
@@ -63,7 +65,7 @@
                         <a class="nav-link header-nav-hover" href="about_us.html">о нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-nav-hover" href="contacts.html">контакты</a>
+                        <a class="nav-link header-nav-hover active" href="contacts.html">контакты</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link header-nav-hover" href="#">рус</a>
@@ -102,13 +104,17 @@
                     </label>
                 </div>
                 <div class="form-check forms-volunteer__check">
-                    <input class="form-check-input" type="checkbox" data-color="default" value="" id="invalidCheck"
-                           required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Leather and leather good exporters are gung-ho about hitting $5 billion in export receipts by
-                        2022 if the government manages the Leather Working Group’s certification at the earliest,
-                        according to industry insiders.
-                    </label>
+                    <div class="check__checkbox">
+                        <input class="form-check-input" type="checkbox" data-color="default" value="" id="invalidCheck"
+                               required>
+                    </div>
+                    <div class="check__text">
+                        <label class="form-check-label" for="invalidCheck">
+                            Leather and leather good exporters are gung-ho about hitting $5 billion in export receipts by
+                            2022 if the government manages the Leather Working Group’s certification at the earliest,
+                            according to industry insiders.
+                        </label>
+                    </div>
                 </div>
                 <a href="#" class="btn btn-danger button-all">Подать заявку</a>
             </div>
