@@ -1,0 +1,41 @@
+.fund-helps .container{
+  font-family: 'Poppins', sans-serif;
+  background-color: #F3F5F7;
+  .steps-helps {
+    .row {
+      margin: 50px auto;
+    }
+    em{
+      border-radius: 50%;
+      background-color: red;
+      width: 35px;
+      height: 35px;
+      line-height: 2.8rem;
+    }
+    .card {
+      height: 305px;
+      padding: 30px 10px;
+      box-shadow: 0 7px 25px -10px;
+
+      h1 {
+        font-weight: bolder;
+      }
+
+      h5 {
+        position: center;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+    .carousel-control-next {
+      position: static;
+      opacity: 1;
+    }
+  }
+}
+.steps-helps{
+  text-align: center;
+  padding: 50px 0;
+}
