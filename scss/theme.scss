@@ -20,9 +20,12 @@
 
 @import "dist/lightbox.min";
 
-//Our project
-@import "main-parts/section-fund-helps";
-@import "main-parts/section-projects";
-
 //About Us
 @import "about_us/section-about-us";
+
+//Our project
+@import "OurProject/section-fund-helps";
+@import "OurProject/section-projects";
+@import "OurProject/section-questions";
+
+@import "vacancies/vacancies-main";
