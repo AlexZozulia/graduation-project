@@ -29,10 +29,9 @@
 
       .forms-volunteer__img {
         h5 {
-          @include fon($fonPoppins, 20px, $sineGoluboy);
+          @include fonBold($fonPoppins, 20px, $sineGoluboy);
           margin-top: 50px;
           margin-bottom: 3px;
-          font-weight: 900;
         }
       }
 

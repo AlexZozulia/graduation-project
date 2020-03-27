@@ -40,10 +40,9 @@ footer {
       }
       .footer-content__help {
         h4 {
-          @include fon($fonPoppins, 20px, #ffffff);
+          @include fonBold($fonPoppins, 20px, #ffffff);
           margin-top: 15px;
           margin-bottom: 31px;
-          font-weight: 900;
         }
         h5 {
           @include fonBold($fonPoppins, 14px, #CCCCCC);
@@ -53,10 +52,9 @@ footer {
       }
       .footer-content__contact {
         h4 {
-          @include fon($fonPoppins, 20px, #ffffff);
+          @include fonBold($fonPoppins, 20px, #ffffff);
           margin-top: 15px;
           margin-bottom: 31px;
-          font-weight: 900;
         }
         .contact-post {
           margin-left: 4px;
