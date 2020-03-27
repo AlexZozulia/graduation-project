@@ -24,6 +24,7 @@
           @include fonBold($fonPoppins, 20px, $sineGoluboy);
           margin-left: 10px;
           margin-bottom: 0px;
+          text-shadow: 0px 3px 6px rgba(23, 37, 65, 0.16);
         }
       }
 
@@ -32,6 +33,14 @@
           @include fonBold($fonPoppins, 20px, $sineGoluboy);
           margin-top: 50px;
           margin-bottom: 3px;
+          text-shadow: 0px 3px 6px rgba(23, 37, 65, 0.16);
+        }
+        img {
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.16);
+        }
+        //стили для страницы "Контакты"
+        .forms-img__contacts {
+          margin-top: 68px;
         }
       }
 
@@ -43,7 +52,7 @@
 
       }
 
-      button {
+      a {
         background: $bgButton;
         margin-bottom: 60px;
 
