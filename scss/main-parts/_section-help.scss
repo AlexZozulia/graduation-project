@@ -2,6 +2,16 @@
   height: 300px;
   margin-bottom: 133px;
 }
+@include media-breakpoint-down(sm) {
+  .section-help {
+    margin-bottom: 15px;
+  }
+  }
+@include media-breakpoint-only(md) {
+  .section-help {
+    margin-bottom: 35px;
+  }
+  }
 .post {
   position: relative;
   margin: auto;

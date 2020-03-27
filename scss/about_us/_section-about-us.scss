@@ -1,0 +1,16 @@
+.section-fund {
+  .section-fund__about_us {
+    @include fonBold($fonPoppins, 30px, $sineGoluboy);
+    padding: 50px 0px;
+  }
+}
+.section-about-us {
+  .container {
+    .about-us__content {
+      @include fon($fonNunitoSans, 18px, $sineGoluboy);
+      padding-top: 30px;
+      padding-bottom: 165px;
+    }
+  }
+
+}
