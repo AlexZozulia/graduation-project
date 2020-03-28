@@ -55,3 +55,8 @@ $(document). ready(function(){
     lineBuilder(".line");
     circleBuilder('.circles');
 });
+
+$('input').iCheck({
+    checkboxClass: 'icheckbox_polaris',
+    radioClass: 'iradio_polaris',
+});

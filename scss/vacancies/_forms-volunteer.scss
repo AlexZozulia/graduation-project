@@ -12,7 +12,6 @@
       margin-bottom: 90px;
       .forms-volunteer__data {
         margin-top: 40px;
-        margin-bottom: 43px;
 
         .form-control {
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
@@ -24,6 +23,7 @@
           @include fonBold($fonPoppins, 20px, $sineGoluboy);
           margin-left: 10px;
           margin-bottom: 0px;
+          text-shadow: 0px 3px 6px rgba(23, 37, 65, 0.16);
         }
       }
 
@@ -32,18 +32,31 @@
           @include fonBold($fonPoppins, 20px, $sineGoluboy);
           margin-top: 50px;
           margin-bottom: 3px;
+          text-shadow: 0px 3px 6px rgba(23, 37, 65, 0.16);
+        }
+        img {
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.16);
+        }
+        //стили для страницы "Контакты"
+        .forms-img__contacts {
+          margin-top: 68px;
         }
       }
 
       .forms-volunteer__check {
         margin: 43px 0px;
+        display: flex;
+        .form-check-label {
+          margin-left: 12px;
+          padding-right: 40px;
+        }
         label {
           @include fon($fonNunitoSans, 14px, $sineGoluboy);
         }
 
       }
 
-      button {
+      a {
         background: $bgButton;
         margin-bottom: 60px;
 
