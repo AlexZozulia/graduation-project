@@ -5,6 +5,12 @@
       bottom: 15%;
       margin: 0;
     }
+    @include media-breakpoint-down(sm) {
+      .section-carousel-indicators {
+        right: 20%;
+        bottom: 18%;
+      }
+    }
 
     .section-carousel-indicators {
     li {
@@ -24,6 +30,11 @@
       }
     }
     .carousel-inner {
+      .active {
+        display: flex;
+        align-content: center;
+        align-items: center;
+      }
       .carousel-item {
         transition: none;
         min-height: 450px;
@@ -42,12 +53,12 @@
 
           h2 {
             font-size: 0.6rem;
-            margin: 2% 5%;
+            margin: 23px 20px;
           }
 
           p {
             font-size: 0.4rem;
-            margin: 2% 5%;
+            margin: 23px 20px;
           }
         }
 
@@ -55,10 +66,10 @@
           .carousel-block {
             width: 90%;
             h2 {
-              font-size: 1rem;
+              font-size: 1.5rem;
             }
             p {
-              font-size: 0.7rem;
+              font-size: 0.8rem;
             }
           }
         }
@@ -66,10 +77,10 @@
           .carousel-block {
             width: 80%;
             h2 {
-              font-size: 1.5rem;
+              font-size: 1.8rem;
             }
             p {
-              font-size: 0.8rem;
+              font-size: 1rem;
             }
           }
         }
@@ -88,8 +99,8 @@
 
     }
     .section-carousel-next{
-      top: 86%;
-      left: 52%;
+      top: 84%;
+      left: 47%;
       width: 30px;
       height: 30px;
       background: $red;
@@ -98,8 +109,8 @@
       z-index: 20;
     }
     .section-carousel-prev {
-      top: 86%;
-      left: 48%;
+      top: 84%;
+      left: 44%;
       width: 30px;
       height: 30px;
       background: $red;
@@ -110,6 +121,7 @@
       width: 60%;
       height: 60%;
     }
+
   }
 }
 

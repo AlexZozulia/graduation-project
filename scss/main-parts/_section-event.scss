@@ -58,11 +58,10 @@
       .section-event-content-info-circle {
         display: flex;
         flex-direction: row;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
 
         .circles {
-          margin: 0px 10px;
-          position: relative;
+          margin-bottom: 20px;
 
           .circle-days {
             @include fon($fonPoppins, 16px, $sineGoluboy);
