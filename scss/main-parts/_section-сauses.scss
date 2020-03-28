@@ -1,21 +1,27 @@
 .section-сauses {
-  background: #ffffff;
+  background: linear-gradient(#ffffff 90%, #F3F5F7 0%);
+
   .container {
     h5 {
       @include fon($fonPoppins, 20px, $sineGoluboy);
       margin-top: 110px;
     }
+
     h2 {
       @include fonBold($fonPoppins, 30px, $sineGoluboy);
       margin-bottom: 25px;
     }
+
     p {
       @include fon($fonNunitoSans, 18px, $sineGoluboy);
       margin-bottom: 15px;
     }
+
     .section-сauses-content {
-      box-shadow: 0px 0px 12px rgba(0,0,0,0.10);
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.10);
       margin-bottom: 48px;
+      background: #ffffff;
+
       .image-container {
 
         &.with-overlay {
@@ -76,25 +82,29 @@
         height: 8px;
         position: relative;
       }
+
       .section-сauses-content-info {
         display: flex;
         flex-wrap: wrap;
         padding: 8px 25px 25px 25px;
 
-          .post-line {
-            width: 50%;
-            margin-bottom: 24px;
-            @include fonBold($fonPoppins, 14px, $sineGoluboy);
-          }
-        h3{
+        .post-line {
+          width: 50%;
+          margin-bottom: 24px;
+          @include fonBold($fonPoppins, 14px, $sineGoluboy);
+        }
+
+        h3 {
           width: 100%;
           @include fonBold($fonPoppins, 20px, $sineGoluboy);
         }
+
         .post-time {
           @include fonBold($fonNunitoSans, 14px, $sineGoluboy);
           width: 50%;
           border-bottom: 1px solid #E2E1E1;
           padding-bottom: 9px;
+
           span {
             @include fon($fonNunitoSans, 14px, $sineGoluboy);
             margin-left: 4px;
@@ -107,14 +117,17 @@
           width: 50%;
           margin-top: 9px;
           margin-bottom: 20px;
+
           span {
             @include fon($fonNunitoSans, 14px, $sineGoluboy);
             margin-left: 4px;
             font-weight: normal;
           }
         }
-        button{
+
+        a {
           background: $bgButton;
+
           &:hover {
             background: #ffffff;
             color: #FF0000;
