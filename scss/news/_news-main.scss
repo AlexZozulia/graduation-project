@@ -1,0 +1,90 @@
+@import "../main-parts/text-color";
+
+.news .container {
+  font-family: Poppins, sans-serif;
+
+  h1 {
+    font-weight: bold;
+    padding: 25px;
+  }
+
+  .card-news {
+    width: 48%;
+    background-color: #FFFFFF;
+  max-height: 285px;
+    max-width: 535px;
+    h3 {
+      background-color: #ca0523;
+      color: #FFFFFF;
+      line-height: 3rem;
+      margin: 20px 0 20px;
+      text-align: center;
+      width: 50%;
+    }
+
+    .info-time {
+      line-height: 2.2rem;
+      color: $texVeryDrGray;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 1.3rem;
+    }
+
+    .btn {
+      span {
+        color: $bgIconDon;
+        margin-right: 10px;
+      }
+    }
+    ul {
+      position: absolute;
+      text-decoration: none;
+      list-style: none;
+      left: 28%;
+      z-index: 10;
+      font-size: 1.5rem;
+      top: 340px;
+      padding: 0;
+      li {
+        margin: 15px 0;
+        a{
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        em{
+          color: #ca0523;
+          width: 35px;
+          text-align: center;
+        }
+        }
+      }
+      ul.soc-2{
+        left: 67%;
+      }
+      li:nth-child(2){
+        a{
+          background-color: #ca0523;
+          em{
+            color: #FFFFFF;
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.img-news {
+  width: 270px;
+  height: 285px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
