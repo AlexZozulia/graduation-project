@@ -26,6 +26,9 @@
     .carousel-inner {
       .carousel-item {
         transition: none;
+        min-height: 450px;
+        max-height: 450px;
+
         .carousel-block {
           width: 40%;
           height: 90%;
@@ -87,8 +90,8 @@
     .section-carousel-next{
       top: 86%;
       left: 52%;
-      width: 4%;
-      height: 10%;
+      width: 30px;
+      height: 30px;
       background: $red;
       border-radius: 50%;
       margin-left: 2%;
@@ -97,8 +100,8 @@
     .section-carousel-prev {
       top: 86%;
       left: 48%;
-      width: 4%;
-      height: 10%;
+      width: 30px;
+      height: 30px;
       background: $red;
       border-radius: 50%;
       z-index: 20;
