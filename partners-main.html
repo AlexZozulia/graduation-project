@@ -62,13 +62,13 @@
                         <a class="nav-link header-nav-hover" href="vacancies-main.html">вакансии</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-nav-hover" href="partners.html">партнёры</a>
+                        <a class="nav-link header-nav-hover active" href="#">партнёры</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link header-nav-hover" href="about_us.html">о нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-nav-hover active" href="contacts.html">контакты</a>
+                        <a class="nav-link header-nav-hover" href="contacts.html">контакты</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link header-nav-hover" href="#">рус</a>
@@ -81,48 +81,46 @@
         </nav>
     </div>
 </header>
-<!-- Секция для формы "Заявка на позицию волонтёра" -->
-<section class="forms-volunteer">
+<!-- Секция для курусели c партнерами -->
+<section class="slide-partners">
     <div class="container">
-        <h3 class="text-center">
-            Контакты
-        </h3>
-        <form action="">
-            <div class="row forms-volunteer-content">
-                <div class="col-sm-12 col-md-8 col-lg-8 forms-volunteer__data">
-                    <label for="fio">ФИО</label>
-                    <input type="text" name="fio" id="fio" class="form-control">
-                    <label for="email">Электронная почта</label>
-                    <input type="text" name="email" id="email" class="form-control">
-                    <label for="message">Сообщение</label>
-                    <textarea type="text" name="message" id="message" class="form-control" rows="7"></textarea>
-                    <div class="google-Captcha">
-                        <img src="img/Google-Captcha.svg" alt="" class="img-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col col-sm-12 "><a href="#x" class="thumbnail"><img class="img-fluid" src="img/partners_1.png" alt="Image"></a>
+                        </div>
+                        <div class="col"><a href="#x" class="thumbnail"><img class="img-fluid" src="img/partners_2.png" alt="Image"></a>
+                        </div>
+                        <div class="col"><a href="#x" class="thumbnail"><img class="img-fluid" src="img/partners_3.png" alt="Image"></a>
+                        </div>
+                        <div class="col"><a href="#x" class="thumbnail"><img class="img-fluid" src="img/partners_4.png" alt="Image"></a>
+                        </div>
+                        <div class="col"><a href="#x" class="thumbnail"><img class="img-fluid" src="img/partners_5.png" alt="Image"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 forms-volunteer__img">
-                    <input type="file" class="custom-file-input d-none" id="customFile">
-                    <label for="customFile">
-                        <img src="img/message.png" alt="" class="img-fluid forms-img__contacts">
-                    </label>
-                </div>
-                <div class="form-check forms-volunteer__check">
-                    <div class="check__checkbox">
-                        <input class="form-check-input" type="checkbox" data-color="default" value="" id="invalidCheck"
-                               required>
-                    </div>
-                    <div class="check__text">
-                        <label class="form-check-label" for="invalidCheck">
-                            Leather and leather good exporters are gung-ho about hitting $5 billion in export receipts by
-                            2022 if the government manages the Leather Working Group’s certification at the earliest,
-                            according to industry insiders.
-                        </label>
-                    </div>
-                </div>
-                <a href="#" class="btn btn-danger button-all">Подать заявку</a>
+<!--                <div class="carousel-item">-->
+<!--                    <img src="..." class="d-block w-100" alt="...">-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                    <img src="..." class="d-block w-100" alt="...">-->
+<!--                </div>-->
             </div>
-        </form>
-        <div class="empty"></div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 </section>
 

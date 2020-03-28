@@ -30,20 +30,23 @@ header{
   .container{
     .navbar{
       .collapse{
+        li {
+          @include fon($fonNunitoSans, 16px, #707070);
+        }
         .header-nav-hover:hover{
           color: $textRed !important;
         }
-        a{
+        .btn {
           margin: 0px 20px;
         }
         @include media-breakpoint-down(sm) {
-          a {
+          .btn {
             width: 100%;
             margin: 10px 0px;
           }
         }
         @include media-breakpoint-only(md) {
-          a {
+          .btn {
             width: 100%;
             margin: 10px 0px;
           }
