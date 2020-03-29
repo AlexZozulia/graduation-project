@@ -36,22 +36,27 @@ header{
         .header-nav-hover:hover{
           color: $textRed !important;
         }
-        .btn {
-          margin: 0px 20px;
-        }
-        @include media-breakpoint-down(sm) {
-          .btn {
-            width: 100%;
-            margin: 10px 0px;
-          }
-        }
-        @include media-breakpoint-only(md) {
-          .btn {
-            width: 100%;
-            margin: 10px 0px;
-          }
-        }
       }
     }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn__header {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .btn__header {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .btn__header {
+    margin: 0px 20px;
   }
 }
