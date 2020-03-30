@@ -15,3 +15,7 @@ $fonNunitoSans: 'Nunito Sans', sans-serif;
   color: $color;
   font-weight: bold;
 }
+@mixin flex-a-center{
+  display: flex;
+  align-items: center;
+}

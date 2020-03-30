@@ -28,6 +28,7 @@ const jsFiles = [
     './src/js/progressbar.min.js',
     './src/js/lightbox.js',
     './src/js/icheck.js',
+    './src/js/carousel.js',
     './src/js/main.js'
 
 ];
