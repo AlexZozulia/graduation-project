@@ -11,9 +11,12 @@
 @import "main-parts/section-сauses";
 @import "main-parts/section-expert-team";
 @import "main-parts/section-best-gallery";
+@import "main-parts/section-testimonial";
 @import "main-parts/section-event";
-@import "main-parts/_section-testimonial.scss";
 
+@import "main-parts/slide-partners";
+
+@import "main-parts/footer";
 
 
 //forms-volunteer
@@ -21,7 +24,14 @@
 
 @import "dist/lightbox.min";
 
-//Our project
-@import "main-parts/section-fund-helps";
-@import "main-parts/section-projects";
 
+//About Us
+@import "about_us/section-about-us";
+
+@import "OurProject/section-fund-helps";
+@import "OurProject/section-projects";
+@import "OurProject/section-questions";
+
+@import "vacancies/vacancies-main";
+
+@import "news/news-main";

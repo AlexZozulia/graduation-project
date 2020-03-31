@@ -4,6 +4,8 @@
   border: none;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  font-family: $fonNunitoSans;
 }
 section {
   background: #F3F5F7;
@@ -28,25 +30,33 @@ header{
   .container{
     .navbar{
       .collapse{
+        li {
+          @include fon($fonNunitoSans, 16px, #707070);
+        }
         .header-nav-hover:hover{
           color: $textRed !important;
         }
-        button{
-          margin: 0px 20px;
-        }
-        @include media-breakpoint-only(sm) {
-          button {
-            width: 100%;
-            margin: 10px 0px;
-          }
-        }
-        @include media-breakpoint-only(md) {
-          button {
-            width: 100%;
-            margin: 10px 0px;
-          }
-        }
       }
     }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn__header {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .btn__header {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .btn__header {
+    margin: 0px 20px;
   }
 }

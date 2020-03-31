@@ -21,6 +21,12 @@
       margin-bottom: 30px;
     }
   }
+  .section-fund__img {
+    margin-bottom: 50px;
+    img {
+      box-shadow: 15px 20px 0px #DBDBDB;
+    }
+  }
 }
 
 .section-fund {
@@ -30,15 +36,18 @@
       padding-bottom: 20px;
 
       .section-fund-icon {
-        background-color: $bgWhite;
+        margin: 23px 0px;
+      }
+      i {
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
-        border-radius: 100%;
+        border-radius: 50%;
+        color: #11171d;
         width: 80px;
         height: 80px;
-        display: -webkit-box;
-        -webkit-box-align: center;
-        -webkit-box-pack: center;
-        margin: 23px 0px;
+        line-height: 80px;
+        background: #fff;
+        font-size: 40px;
+        display: inline-block;
       }
 
       h6 {
@@ -55,9 +64,11 @@
       }
     }
   }
-  button {
+  .btn__fund {
     background: $bgButton;
-    box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.3);
     margin: 79px 0px;
+    &:hover {
+      background: #000000;
+    }
   }
 }

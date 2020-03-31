@@ -1,0 +1,102 @@
+footer {
+  background: #11171D url("../../img/footer_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    .footer-content {
+      padding-top: 125px;
+      border-bottom: solid 2px #707070;
+      .footer-content__social {
+        p {
+          @include fon($fonNunitoSans, 14px, #CCCCCC);
+          margin-top: 73px;
+        }
+        .footer__icons-logo {
+          display: inline-block;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+
+          li {
+            margin: 30px 18px 75px 0px;
+            float: left;
+
+
+            a {
+              text-decoration: none;
+
+              em {
+                border-radius: 50%;
+                color: #11171D;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background: #ffffff;
+              }
+            }
+          }
+
+        }
+      }
+      .footer-content__help {
+        h4 {
+          @include fonBold($fonPoppins, 20px, #ffffff);
+          margin-top: 15px;
+          margin-bottom: 31px;
+        }
+        h5 {
+          @include fonBold($fonPoppins, 14px, #CCCCCC);
+          margin-left: 4px;
+          margin-bottom: 10px;
+        }
+      }
+      .footer-content__contact {
+        h4 {
+          @include fonBold($fonPoppins, 20px, #ffffff);
+          margin-top: 15px;
+          margin-bottom: 31px;
+        }
+        .contact-post {
+          margin-left: 4px;
+          margin-bottom: 10px;
+          i {
+            color: #FF0000;
+          }
+          span {
+            @include fon($fonNunitoSans, 14px, #CCCCCC);
+            margin-left: 26px;
+          }
+        }
+        .contact-form {
+          margin-top: 23px;
+          margin-bottom: 30px;
+          input {
+            background: rgba(0, 0, 0, 0);
+            border-radius: 20px 0px 0px 20px;
+            height: 50px;
+            font-size: 15px;
+            padding-left: 30px;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+          .contact-form__submit {
+            height: 50px;
+            border-radius: 0px 20px 20px 0px;
+            color: #11171D;
+            font-size: 14px;
+            font-weight: bold;
+            padding-right: 29px;
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+    .footer-content-footer {
+      padding: 40px 0px;
+      @include fon($fonNunitoSans, 16px, #707070)
+    }
+  }
+}

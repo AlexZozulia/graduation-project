@@ -1,0 +1,48 @@
+.steps-to-volunteer .steps {
+  font-family: Poppins, sans-serif;
+  h2{
+    font-weight: bold;
+    padding: 25px 0;
+  }
+  .row{
+    h1 {
+      font-weight: bolder;
+      margin-top: 25px;
+    }
+    h5{
+      line-height: 2rem;
+    }
+  }
+
+  em {
+    border-radius: 50%;
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    line-height: 2.8rem;
+  }
+}
+
+.vacancies{
+  h1{
+    padding: 3%;
+    font-weight: bolder;
+  }
+.row {
+  background-color: #FFFFFF;
+
+  h2 {
+    margin: 30px auto;
+  }
+
+  p {
+    margin: 30px auto;
+  }
+}
+}
+.divider {
+  width: 100%;
+  height: 30px;
+  clear: both;
+
+}

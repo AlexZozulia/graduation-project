@@ -27,35 +27,16 @@ const jsFiles = [
     './src/js/616a422fe3.js',
     './src/js/progressbar.min.js',
     './src/js/lightbox.js',
+    './src/js/icheck.js',
+    './src/js/carousel.js',
     './src/js/main.js'
+
 ];
 
 // File paths
 const files = {
     scssPath: './scss/**/*.scss',
 };
-
-//Таск на стили CSS
-function styles() {
-    //Шаблон для поиска файлов CSS
-    //Всей файлы по шаблону './src/css/**/*.css'
-    return gulp.src(cssFiles)
-        //Обьединение файлов в один
-        .pipe(concat('style.css'))
-        //Добавить префиксы
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 versions'],
-            cascade: false
-        }))
-        //Минификация CSS
-        .pipe(cleanCSS({
-            level: 2
-        }))
-        //Выходная папка для стилей
-        .pipe(gulp.dest('./build/css'))
-        .pipe(browserSync.stream());
-
-}
 
 //Таск на скрипты JS
 function scripts() {
@@ -94,8 +75,6 @@ function watch() {
             baseDir: "./"
         }
     });
-    //Следить за CSS файлами
-    gulp.watch('./src/css/**/*.css', styles)
     //Следить за JS файлами
     gulp.watch('./src/js/**/*.js', scripts)
     //Следить за SCSS файлами
@@ -104,9 +83,6 @@ function watch() {
 //При измененни HTML запустить синхронизацию
     gulp.watch("./*.html").on('change', browserSync.reload);
 }
-
-//Таск вызывающий функцию styles
-gulp.task('styles', styles);
 //Таск вызывающий функцию scripts
 gulp.task('scripts', scripts);
 //Таск для очистки папки build
@@ -116,6 +92,6 @@ gulp.task('watch', watch);
 //Таск вызывающий функцию scssTask
 gulp.task('scssTask', scssTask);
 //Таск для удаления файлов в папке build и запуск styles и scripts
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
+gulp.task('build', gulp.series(clean, gulp.parallel( scripts)));
 //Таск запускает таск build, scssTask  и watch
 gulp.task('dev', gulp.series('build', 'scssTask', 'watch'));
