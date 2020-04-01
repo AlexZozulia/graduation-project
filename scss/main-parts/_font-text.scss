@@ -3,19 +3,29 @@
 
 $fonPoppins: 'Poppins', sans-serif;
 $fonNunitoSans: 'Nunito Sans', sans-serif;
-
+//миксин на текст
 @mixin fon ($fontFamily, $fontSize, $color){
   font-family: $fontFamily;
   font-size: $fontSize;
   color: $color;
 }
+//миксин на текст жирный
 @mixin fonBold ($fontFamily, $fontSize, $color){
   font-family: $fontFamily;
   font-size: $fontSize;
   color: $color;
   font-weight: bold;
 }
+//миксин для слайда
 @mixin flex-a-center{
   display: flex;
   align-items: center;
+}
+//миксин на hover cсылки
+@mixin hover-link {
+  a:hover {
+    color: #FF0000 !important;
+    transition: all .3s !important;
+    text-decoration: none!important;
+  }
 }

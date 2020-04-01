@@ -37,7 +37,7 @@
 }
 
 .help h4{
-  color: $textRed;
+  @include fonBold($fonPoppins, 20px, $textRed);
   padding-top: 51px;
   padding-bottom: 29px;
 }

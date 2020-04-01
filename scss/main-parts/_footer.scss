@@ -21,7 +21,6 @@ footer {
             margin: 30px 18px 75px 0px;
             float: left;
 
-
             a {
               text-decoration: none;
 
@@ -32,6 +31,10 @@ footer {
                 height: 40px;
                 line-height: 40px;
                 background: #ffffff;
+                &:hover{
+                  background: $bgButton;
+                  transition: all .3s ;
+                }
               }
             }
           }
@@ -77,9 +80,7 @@ footer {
             font-size: 15px;
             padding-left: 30px;
           }
-          a:hover {
-            text-decoration: none;
-          }
+
           .contact-form__submit {
             height: 50px;
             border-radius: 0px 20px 20px 0px;
@@ -88,7 +89,7 @@ footer {
             font-weight: bold;
             padding-right: 29px;
             &:hover {
-              color: $red;
+              color: $bgButton;
             }
           }
         }
@@ -96,7 +97,12 @@ footer {
     }
     .footer-content-footer {
       padding: 40px 0px;
-      @include fon($fonNunitoSans, 16px, #707070)
+      @include fon($fonNunitoSans, 16px, #CCCCCC);
     }
   }
+  a {
+    color: #CCCCCC;
+  }
+  @include hover-link;
+
 }

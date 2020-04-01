@@ -7,8 +7,11 @@
     }
     @include media-breakpoint-down(sm) {
       .section-carousel-indicators {
-        right: 20%;
+        right: 35%;
         bottom: 18%;
+      }
+      .section-carousel-indicators li {
+        margin-right: 20px;
       }
     }
 
@@ -17,7 +20,7 @@
         display: inline-block;
         width: 10px;
         height: 10px;
-        margin: 5px;
+        margin-right: 5px;
         text-indent: -999px;
         border: 1px solid #fff;
         border-radius: 10px;
@@ -25,6 +28,7 @@
         background-color: #000;
         background-color: rgba(0, 0, 0, 0);
       }
+
       .active {
         background-color: #fff;
       }
@@ -125,3 +129,10 @@
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .section-carousel-indicators {
+    li {
+      margin-right: 20px !important;
+    }
+  }
+}
