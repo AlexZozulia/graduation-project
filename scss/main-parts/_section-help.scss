@@ -41,3 +41,13 @@
   padding-top: 51px;
   padding-bottom: 29px;
 }
+////адаптив
+
+@include media-breakpoint-down(sm) {
+  .section-help span[class^=icon], .section-help .icon {
+    padding-top: 39px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+}
