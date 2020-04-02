@@ -1,0 +1,66 @@
+.testimonial{
+   width: 100%;
+
+ h3{
+  text-align: center;
+  @include fonBold($fonPoppins, 20px, #1D252D);
+   padding-top: 115px;
+}
+
+  h2{
+    text-align: center;
+    @include fonBold($fonPoppins, 30px, #1D252D);
+    margin-top: 30px;
+    padding-bottom: 80px;
+  }
+
+#carouselExampleControls{
+  margin: 0;
+  margin-left: 179px;
+  width: 1100px;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    padding: 20px;
+    color: #11171D;
+    z-index: 999;
+    border-radius: 50%;
+    border: 1px solid #11171D;
+    width: 25px;
+    top: 300px;
+    bottom: 151px;
+    .fas{
+      color: #11171D;
+    }
+  }
+  .carousel-control-prev{
+    left: 356px;
+  }
+  .carousel-control-next{
+    right: 645px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none;
+  }
+}
+  h6{
+    margin-bottom: 65px;
+    @include fonBold($fonNunitoSans, 14px, #1D252D);
+    padding: 0 15px;
+  }
+  p{
+    @include fon($fonNunitoSans, 20px, #1D252D);
+    font-style: italic;
+
+  }
+  img{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    padding-bottom: 150px;
+
+  }
+  .fas{
+    color: #FF0000;
+    float: right;
+  }
+}

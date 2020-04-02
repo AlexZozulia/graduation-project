@@ -24,6 +24,7 @@ section {
     color: #707070;
     text-decoration: none;
   }
+  @include hover-link;
 }
 header{
   background: #ffffff;
@@ -46,12 +47,22 @@ header{
     width: 100%;
     margin: 10px 0px;
   }
+  header {
+    li:nth-child(-n+8) {
+      border-bottom: 1px solid #888888;
+    }
+  }
 }
 
 @include media-breakpoint-only(md) {
   .btn__header {
     width: 100%;
     margin: 10px 0px;
+  }
+  header {
+    li:nth-child(-n+8) {
+      border-bottom: 1px solid;
+    }
   }
 }
 

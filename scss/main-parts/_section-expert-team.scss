@@ -65,7 +65,10 @@
     margin-top: 40px;
     border-radius: 0;
     width: 146px;
-    height: 46px;
+    height: 56px;
+     @include fonBold($fonNunitoSans, 16px, #ffff);
+    padding-top: 15px;
+
   }
 
 }

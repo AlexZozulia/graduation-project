@@ -1,6 +1,7 @@
 .best-gallery {
   background-color: #ffff;
   margin-top: 120px;
+  margin-bottom: 130px;
 
 
   h2 {
@@ -15,54 +16,58 @@
     text-align: center;
     margin-top: 20px;
   }
-.span-gallery{
-   display: flex;
-  justify-content: center; /*Центрирование по горизонтали*/
-  align-items: center;
-  margin-bottom: 60px;
-  .nav-link {
-  background-color: #EAEAEA;
-  border-radius: 100px;
-  line-height: 47px;
-  margin: 0 12px;
-  @include fonBold($fonNunitoSans, 16px, #1D252D);
-  height: 48px;
-  padding: 0 32px;
+
+  .span-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
 
 
-  &#pills-All-tab{
-    color: #ffff;
-    background-color: #FF0000;
-    text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
-    box-shadow: 0 10px 18px rgba(0,10,20,.5);
+    .nav-link {
+      background-color: #EAEAEA;
+      border-radius: 100px;
+      line-height: 47px;
+      margin: 0 12px;
+      @include fonBold($fonNunitoSans, 16px, #1D252D);
+      height: 48px;
+      padding: 0 32px;
 
+      .nav-link :hover {
+        color: #fff;
+        background: #FF0000;
+
+      }
+
+      &.active {
+        color: #ffff;
+        background-color: #FF0000;
+        text-shadow: 0 1px rgba(255, 255, 255, .2), 0 -1px rgba(0, 0, 0, .8);
+        box-shadow: 0 10px 18px rgba(0, 10, 20, .5);
+      }
+
+    }
   }
-}
-}
 
-  .tab-content{
+  .tab-content {
     max-width: 1120px;
     margin: 0 auto;
 
-    #first-col{
-      .card-img{
+    .first-col {
+      .card-img {
         padding: 0 15px 29px;
       }
-      }
-    #second-col{
-      .card-img{
+    }
+
+    .second-col {
+      .card-img {
         padding: 0 0 30px;
         max-width: 350px;
       }
-      }
+    }
 
 
   }
 
 }
 
-////Add proper classes
-//.card-img{
-//  margin-top: 30px;
-//
-//}
