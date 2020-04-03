@@ -17,27 +17,30 @@
 #carouselExampleControls{
   margin: 0 auto;
 
-
+.carusel-control {
+  position: relative;
+  color: #11171d;
+  z-index: 999;
+  top: 300px;
+  width: 500px;
+  height: 30px;
   .carousel-control-prev,
   .carousel-control-next {
-    position: absolute;
-    padding: 20px;
-    color: #11171D;
-    z-index: 999;
     border-radius: 50%;
     border: 1px solid #11171D;
-    width: 25px;
-    top: 300px;
-    bottom: 151px;
+    width: 40px;
+    height: 40px;
+
     .fas{
       color: #11171D;
     }
   }
+}
   .carousel-control-prev{
-    left: 356px;
+    left: 310px;
   }
   .carousel-control-next{
-    right: 645px;
+    right: 90px;
   }
   .carousel-control-next-icon, .carousel-control-prev-icon{
     display: none;
