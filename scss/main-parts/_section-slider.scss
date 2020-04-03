@@ -5,9 +5,10 @@
       bottom: 15%;
       margin: 0;
     }
+
     @include media-breakpoint-down(sm) {
       .section-carousel-indicators {
-        right: 35%;
+        right: 20%;
         bottom: 18%;
       }
       .section-carousel-indicators li {
@@ -16,7 +17,7 @@
     }
 
     .section-carousel-indicators {
-    li {
+      li {
         display: inline-block;
         width: 10px;
         height: 10px;
@@ -33,12 +34,14 @@
         background-color: #fff;
       }
     }
+
     .carousel-inner {
       .active {
         display: flex;
         align-content: center;
         align-items: center;
       }
+
       .carousel-item {
         transition: none;
         min-height: 450px;
@@ -69,9 +72,11 @@
         @include media-breakpoint-down(sm) {
           .carousel-block {
             width: 90%;
+
             h2 {
               font-size: 1.5rem;
             }
+
             p {
               font-size: 0.8rem;
             }
@@ -80,9 +85,11 @@
         @include media-breakpoint-up(md) {
           .carousel-block {
             width: 80%;
+
             h2 {
               font-size: 1.8rem;
             }
+
             p {
               font-size: 1rem;
             }
@@ -91,9 +98,11 @@
         @include media-breakpoint-up(lg) {
           .carousel-block {
             width: 40%;
+
             h2 {
               font-size: 2rem;
             }
+
             p {
               font-size: 1rem;
             }
@@ -102,7 +111,8 @@
       }
 
     }
-    .section-carousel-next{
+
+    .section-carousel-next {
       top: 84%;
       left: 47%;
       width: 30px;
@@ -112,6 +122,7 @@
       margin-left: 2%;
       z-index: 20;
     }
+
     .section-carousel-prev {
       top: 84%;
       left: 44%;
@@ -121,7 +132,8 @@
       border-radius: 50%;
       z-index: 20;
     }
-    .section-carousel-control-icon{
+
+    .section-carousel-control-icon {
       width: 60%;
       height: 60%;
     }
@@ -134,5 +146,8 @@
     li {
       margin-right: 20px !important;
     }
+  }
+  .carousel-block {
+    left: 5% !important;
   }
 }
