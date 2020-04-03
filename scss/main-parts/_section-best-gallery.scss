@@ -68,6 +68,17 @@
 
 
   }
-
+  @media (max-width: 992px){
+    .span-gallery ul{
+      justify-content: space-around;
+      li{
+        margin: 10px 0;
+      }
+    }
+    .card-img{
+margin-bottom: 30px;
+      padding-bottom: 0!important;
+    }
+  }
 }
 
