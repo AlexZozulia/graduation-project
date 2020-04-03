@@ -52,6 +52,11 @@ header{
       border-bottom: 1px solid #888888;
     }
   }
+  .header-contact {
+    .header-contact__post {
+      text-align: center;
+    }
+  }
 }
 
 @include media-breakpoint-only(md) {
@@ -64,10 +69,20 @@ header{
       border-bottom: 1px solid;
     }
   }
+  .header-contact {
+    .header-contact__post:nth-child(3) {
+      text-align: right;
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
   .btn__header {
     margin: 0px 20px;
+  }
+  .header-contact {
+    .header-contact__post:nth-child(3) {
+      text-align: right;
+    }
   }
 }
