@@ -2,13 +2,37 @@
   .container{
   text-align: center;
   padding-top: 50px;
-  .row{
     h2{
     line-height: 3rem;
+    font-weight: bold;
   }
-    padding: 30px 0;
+  .row{
+    background-color: #FFFFFF;
+    margin: 30px auto;
+
     div{
       text-align: left;
+      img{
+        box-shadow: 0 0 10px 1px #4e555b;
+      }
+      a>h2{
+        color: #000000;
+        font-size: 1.8rem;
+      }
+      p{
+        overflow: hidden;
+        display: block;
+        max-height: 75px;
+        min-height: 75px;
+      }
     }
   }
+    @media (max-width: 992px){
+      .row{
+
+        .btn{
+          margin-bottom: 30px;
+        }
+      }
+    }
 }}
