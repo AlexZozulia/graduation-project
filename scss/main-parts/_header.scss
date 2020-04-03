@@ -7,6 +7,13 @@
   font-size: 16px;
   font-family: $fonNunitoSans;
 }
+.btn:focus {
+  box-shadow: none;
+}
+button:focus {
+  outline: 0;
+}
+///параметры кнопки
 section {
   background: #F3F5F7;
 }
