@@ -46,11 +46,16 @@
     .info-time{
       color: $texVeryDrGray;
       margin-top: 10px;
+      margin-bottom: 20px;
       i{
         margin-right: 10px;
       }
     }
-    padding-bottom: 50px;
+    p{
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    padding-bottom: 100px;
   }
   .next-news{
     .title-news{

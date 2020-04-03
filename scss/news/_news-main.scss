@@ -12,14 +12,16 @@
     background-color: #FFFFFF;
     margin: 0 0 90px;
     padding-right: 0;
-
+  .title-arch{
+    padding-top: 15px;
+  }
     div > a.category {
       background-color: #ca0523;
       color: #fff;
       margin: 15px 10px 10px 0;
       text-align: center;
       height: 22px;
-      display: inline-block;
+      display: inline;
       font-size: 0.8rem;
       font-weight: bold;
 
