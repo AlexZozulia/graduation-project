@@ -2,6 +2,7 @@
   .section-fund-left {
     h4 {
       @include fonBold($fonNunitoSans, 20px, $textRed);
+      margin-bottom: 30px;
     }
 
     h3 {
