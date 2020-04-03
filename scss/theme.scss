@@ -1,5 +1,5 @@
 @import "bootstrap/bootstrap";
-@import "main-parts/Btn-denger";
+@import "main-parts/btn-denger";
 @import "main-parts/icons";
 @import "main-parts/text-color";
 @import "main-parts/font-text";
@@ -29,17 +29,17 @@
 //About Us
 @import "about_us/section-about-us";
 
-//OurProject
-@import "OurProject/section-fund-helps";
-@import "OurProject/section-projects";
-@import "OurProject/section-questions";
+//our-project
+@import "our-project/section-fund-helps";
+@import "our-project/section-projects";
+@import "our-project/section-questions";
 
 //vacancies
 @import "vacancies/vacancies-main";
 
 //news
 @import "news/news-main";
-@import "news/SingleNews";
+@import "news/single-news";
 
 //Button Up to top
-@import "main-parts/Up-to-top";
+@import "main-parts/up-to-top";

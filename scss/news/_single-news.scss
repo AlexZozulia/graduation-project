@@ -26,11 +26,11 @@
     font-size: 0.8rem;
     font-weight: bold;
     padding: 0 10px;
+    border: solid 1px #ca0523;
     &:hover {
-      background-color: #fff;
+      background-color: $bgWhite;
       color: #ca0523;
       text-decoration: none;
-      border: solid 1px #ca0523;
     }
   }
   .article{
@@ -41,7 +41,7 @@
     }
 
     h2{
-      font-weight: bold;
+      @include fonBold ($fonPoppins, 2rem, $textblack)
     }
     .info-time{
       color: $texVeryDrGray;
@@ -52,7 +52,7 @@
       }
     }
     p{
-      font-size: 1.2rem;
+      @include fon ($fonNunitoSans, 1.2rem, $texVeryDrGray);
       margin-bottom: 2rem;
     }
     padding-bottom: 100px;
