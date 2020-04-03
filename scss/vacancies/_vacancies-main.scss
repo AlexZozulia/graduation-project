@@ -12,14 +12,28 @@
     h5{
       line-height: 2rem;
     }
+    .card{
+      max-width: 260px;
+    }
   }
 
   em {
     border-radius: 50%;
-    background-color: red;
-    width: 35px;
-    height: 35px;
-    line-height: 2.8rem;
+    background-color: $bgIconDon;
+    width: 60px;
+    height: 60px;
+    line-height: 4.5rem;
+    box-shadow: 0 0 15px -5px #4e555b;
+    margin: 30px;
+    i{
+      color: #FFFFFF;
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 992px){
+    .row{
+      flex-direction: column;
+    }
   }
 }
 
@@ -31,13 +45,27 @@
 .row {
   background-color: #FFFFFF;
 
-  h2 {
+  a > h2 {
     margin: 30px auto;
+    font-weight: bold;
+    color: #000000;
   }
 
   p {
     margin: 30px auto;
   }
+  .btn{
+    box-shadow: 0 0 15px -5px $bgIconDon;
+  }
+}
+  @media (max-width: 992px){
+    .btn{
+  margin-bottom: 30px;
+ }
+    img {
+      width: 100%;
+      height: auto;
+    }
 }
 }
 .divider {
