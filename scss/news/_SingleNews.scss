@@ -60,15 +60,16 @@
   .next-news{
     .title-news{
       color: $textblack;
+      &:hover {
+      color: #ca0523;
+      text-decoration: none;
+    }
       h5{
       font-weight: bold;
       margin-top: 10px;
       font-size: 0.9rem;
       }
-      &:hover {
-        color: #ca0523;
-        text-decoration: none;
-      }
+
     }
     margin-bottom: 10px;
     border-bottom: 2px solid $texVeryDrGray;

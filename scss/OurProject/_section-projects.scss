@@ -16,9 +16,16 @@
         box-shadow: 0 0 10px 1px #4e555b;
       }
       a>h2{
-        color: #000000;
+        color: $textblack;
         font-size: 1.8rem;
+
       }
+      a:hover {
+         text-decoration: none;
+        h2{
+          color: #ca0523;
+        }
+       }
       p{
         overflow: hidden;
         display: block;
