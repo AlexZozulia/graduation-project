@@ -1,0 +1,71 @@
+//миксин на hover cсылки @include hover-link
+
+.news .container{
+  .nav-category{
+    padding: 20px 0;
+    color: $texVeryDrGray;
+    a{
+    color: $texVeryDrGray;
+
+      &:hover {
+      color: #ca0523;
+      text-decoration: none;}
+  }
+    a.active{
+     color: $bgIconDon;
+   }
+  }
+  a.category{
+    background-color: #ca0523;
+    color: #fff;
+    margin: 15px 10px 10px 0;
+    text-align: center;
+    width: 45px;
+    height: 22px;
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0 10px;
+    &:hover {
+      background-color: #fff;
+      color: #ca0523;
+      text-decoration: none;
+      border: solid 1px #ca0523;
+    }
+  }
+  .article{
+    .img-news{
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h2{
+      font-weight: bold;
+    }
+    .info-time{
+      color: $texVeryDrGray;
+      margin-top: 10px;
+      i{
+        margin-right: 10px;
+      }
+    }
+    padding-bottom: 50px;
+  }
+  .next-news{
+    .title-news{
+      color: $textblack;
+      h5{
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      }
+      &:hover {
+        color: #ca0523;
+        text-decoration: none;
+      }
+    }
+    margin-bottom: 10px;
+    border-bottom: 2px solid $texVeryDrGray;
+    }
+  }
