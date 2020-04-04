@@ -1,4 +1,22 @@
 @import "../main-parts/text-color";
+a.category {
+  background-color: #ca0523;
+  color: #fff;
+  margin: 15px 10px 10px 0;
+  text-align: center;
+  height: 22px;
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: solid 1px #ca0523;
+  padding: 0 7px;
+  &:hover {
+    background-color: #fff;
+    color: #ca0523;
+    text-decoration: none
+  }
+}
+
 
 .news .container {
   font-family: Poppins, sans-serif;
@@ -15,23 +33,6 @@
   .title-arch{
     padding-top: 15px;
   }
-    div > a.category {
-      background-color: #ca0523;
-      color: #fff;
-      margin: 15px 10px 10px 0;
-      text-align: center;
-      height: 22px;
-      display: inline;
-      font-size: 0.8rem;
-      font-weight: bold;
-
-      &:hover {
-        background-color: #fff;
-        color: #ca0523;
-        text-decoration: none;
-        border: solid 1px #ca0523;
-      }
-    }
 
     .info-time {
       color: $texVeryDrGray;

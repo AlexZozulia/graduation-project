@@ -1,38 +1,35 @@
-//миксин на hover cсылки @include hover-link
-
-.news .container{
-  .nav-category{
-    padding: 20px 0;
-    color: $texVeryDrGray;
-    a{
-    color: $texVeryDrGray;
-
-      &:hover {
-      color: #ca0523;
-      text-decoration: none;}
+@mixin overlay{
+  position: relative;
+  overflow: hidden;
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
   }
-    a.active{
-     color: $bgIconDon;
-   }
-  }
-  a.category{
-    background-color: #ca0523;
-    color: #fff;
-    margin: 15px 10px 10px 0;
-    text-align: center;
-    width: 45px;
-    height: 22px;
-    display: inline;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 0 10px;
-    border: solid 1px #ca0523;
-    &:hover {
-      background-color: $bgWhite;
-      color: #ca0523;
-      text-decoration: none;
+  &:hover{
+    &:before{
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
     }
   }
+}
+
+.nav-category{
+  padding: 20px 0;
+  color: $texVeryDrGray;
+  a{
+    color: $texVeryDrGray;
+  }
+  a.active{
+    color: $bgIconDon;
+  }
+  @include hover-link;
+}
+.news .container{
   .article{
     .img-news{
       max-width: 100%;
@@ -73,5 +70,8 @@
     }
     margin-bottom: 10px;
     border-bottom: 2px solid $texVeryDrGray;
+    .with-overlay{
+      @include overlay;
+    }
     }
   }
