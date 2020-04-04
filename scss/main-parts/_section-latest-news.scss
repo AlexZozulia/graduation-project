@@ -1,0 +1,45 @@
+.latest-news{
+  margin-top: 95px;
+  background-color: #F3F5F7;
+  height: 956px;
+  align-items:center;
+  .text-latest-news{
+
+    text-align: center;
+  }
+h3{
+  @include fon($fonPoppins, 20px, $sineGoluboy);
+   padding-top: 95px;
+
+}
+  h2{
+    @include fonBold($fonPoppins, 30px, $sineGoluboy);
+  }
+p{
+  @include fon($fonNunitoSans, 18px, $sineGoluboy);
+  overflow: hidden;
+  height: 57px;
+
+}
+.card-deck{
+  margin: 60px 200px;
+.row{
+ margin-bottom: -30px;
+  text-align: center;
+  @include fonBold($fonPoppins, 12px, #1D252D);
+
+}
+  p{
+
+    small{
+      @include fonBold($fonPoppins, 12px, #1D252D);
+.col{
+  float: right;
+}
+    }
+
+  }
+}
+
+
+}

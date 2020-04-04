@@ -1,12 +1,14 @@
 .contact-us {
   background-color: #fff;
-  margin: 75px 200px;
-  background-image: url("img/background.png");
-height: 681px;
-
+  height: 681px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 50%;
 
   h6 {
     @include fon($fonPoppins, 16px, #1D252D);
+    padding-top: 65px;
+    padding-bottom: 30px;
   }
 
   h3 {
@@ -17,40 +19,48 @@ height: 681px;
 
     border-bottom: 3px solid #ED4266;
     width: 30px;
-     margin-bottom: 40px;
+    margin-bottom: 40px;
     margin-top: 30px;
   }
+  .needs-validation{
+    padding-right: 95px;
 
-.form-row{
-  border-radius: 0;
-  display: flex;
-  flex-wrap: wrap;
-
-
-
-  .input-group-text {
-  background-color: #ffff;
-   border-right: none;
-}
     input {
       width: 80%;
-      padding: 20px;
+      padding: 25px 0;
       @include fon($fonPoppins, 14px, $sineGoluboy);
       border-left: none;
+      border-color: #EBECED;
+      border-radius: 0;
+      border-width: 2px;
     }
-
+   .input-group-prepend label{
+        background-color: #ffff;
+        border-color: #EBECED;
+        border-radius: 0;
+        border-width: 2px;
+        border-right: none;
+      }
+textarea {
+  border-color: #EBECED;
+  border-radius: 0;
+  border-width: 2px;
+  border-style: double;
+  .form-control{
+  border-color: #EBECED;
+  border-radius: 0;
+  border-width: 2px;
+}
 }
 
- .container .col-md-6 {
-    margin: 0;
-    padding: 0;
 
-   .input-group-prepend{
+  .btn{
+    margin-top: 50px;
+  }
+  }
 
-     background-color: #ffff;
-   }
 
- }
+
 }
 
 
