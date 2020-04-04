@@ -1,4 +1,4 @@
-@import "../main-parts/text-color";
+// стили для ссылки "Катеория" (на красном фоне)
 a.category {
   background-color: #ca0523;
   color: #fff;
@@ -10,13 +10,13 @@ a.category {
   font-weight: bold;
   border: solid 1px #ca0523;
   padding: 0 7px;
+
   &:hover {
     background-color: #fff;
     color: #ca0523;
     text-decoration: none
   }
 }
-
 
 .news .container {
   font-family: Poppins, sans-serif;
@@ -30,9 +30,10 @@ a.category {
     background-color: #FFFFFF;
     margin: 0 0 90px;
     padding-right: 0;
-  .title-arch{
-    padding-top: 15px;
-  }
+
+    .title-arch {
+      padding-top: 15px;
+    }
 
     .info-time {
       color: $texVeryDrGray;

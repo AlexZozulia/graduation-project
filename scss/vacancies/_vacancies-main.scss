@@ -1,78 +1,80 @@
 .steps-to-volunteer .steps {
   font-family: Poppins, sans-serif;
-  h2{
+
+  h2 {
     font-weight: bold;
     padding: 25px 0;
   }
-  .row{
+
+  .row {
     h1 {
       font-weight: bolder;
       margin-top: 25px;
     }
-    h5{
+
+    h5 {
       line-height: 2rem;
     }
-    .card{
+
+    .card {
       max-width: 260px;
     }
   }
 
   em {
-    border-radius: 50%;
-    background-color: $bgIconDon;
-    width: 60px;
-    height: 60px;
-    line-height: 4.5rem;
-    box-shadow: 0 0 15px -5px #4e555b;
-    margin: 30px;
-    i{
-      color: #FFFFFF;
-      font-size: 2rem;
-    }
+    @include NextStep;
   }
-  @media (max-width: 992px){
-    .row{
+
+  @media (max-width: 992px) {
+    .row {
       flex-direction: column;
     }
   }
 }
 
-.vacancies{
-  h1{
+.vacancies {
+  h1 {
     padding: 3%;
     font-weight: bolder;
   }
-.row {
-  background-color: #FFFFFF;
-  a:hover{
+
+  .row {
+    background-color: #FFFFFF;
+
+    a:hover {
       text-decoration: none;
-    h2{
-      color: #ca0523;
-    }
-    }
-  a h2 {
-    margin: 30px auto;
-    font-weight: bold;
-    color: $textblack;
+
+      h2 {
+        color: #ca0523;
+      }
     }
 
-  p {
-    margin: 30px auto;
+    a h2 {
+      margin: 30px auto;
+      font-weight: bold;
+      color: $textblack;
+    }
+
+    p {
+      margin: 30px auto;
+    }
+
+    .btn {
+      box-shadow: 0 0 15px -5px $bgIconDon;
+    }
   }
-  .btn{
-    box-shadow: 0 0 15px -5px $bgIconDon;
-  }
-}
-  @media (max-width: 992px){
-    .btn{
-  margin-bottom: 30px;
- }
+
+  @media (max-width: 992px) {
+    .btn {
+      margin-bottom: 30px;
+    }
     img {
       width: 100%;
       height: auto;
     }
+  }
 }
-}
+
 .divider {
   width: 100%;
   height: 30px;

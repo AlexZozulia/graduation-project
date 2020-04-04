@@ -1,3 +1,17 @@
+@mixin NextStep {
+  border-radius: 50%;
+  background-color: $bgIconDon;
+  width: 60px;
+  height: 60px;
+  line-height: 4.5rem;
+  box-shadow: 0 0 15px -5px #4e555b;
+  margin: 30px;
+  i {
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+}
+
 .fund-helps {
   font-family: 'Poppins', sans-serif;
   background-color: #F3F5F7;
@@ -6,24 +20,28 @@
 .steps-helps {
   text-align: center;
   padding: 50px 0;
-  h2{
+
+  h2 {
     font-weight: bolder;
     padding-bottom: 30px;
   }
-  .card{
+
+  .card {
     min-height: 305px;
     max-height: 305px;
     max-width: 260px;
     box-shadow: 0 0 15px -5px #4e555b;
-    h1{
+
+    h1 {
       font-weight: bolder;
       padding-top: 20px;
     }
-    h5{
-      font-weight: bold;
-      font-size: 1.4rem;
+
+    h5 {
+      @include fonBold($fonPoppins, 1.4rem, $textblack);
     }
-    p{
+
+    p {
       display: block;
       min-height: 75px;
       max-height: 75px;
@@ -31,21 +49,13 @@
       overflow: hidden;
     }
   }
+
   em {
-    border-radius: 50%;
-    background-color: $bgIconDon;
-    width: 60px;
-    height: 60px;
-    line-height: 4.5rem;
-    box-shadow: 0 0 15px -5px #4e555b;
-    margin: 30px;
-    i{
-      color: #FFFFFF;
-      font-size: 2rem;
-    }
+    @include NextStep;
   }
-  @media (max-width: 992px){
-    .row{
+
+  @media (max-width: 992px) {
+    .row {
       flex-direction: column;
     }
   }

@@ -1,7 +1,8 @@
-@mixin overlay{
+//миксин для затемнения (пропадает при наведении)
+@mixin overlay {
   position: relative;
   overflow: hidden;
-  &:before{
+  &:before {
     position: absolute;
     content: '';
     left: 0;
@@ -10,68 +11,82 @@
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
   }
-  &:hover{
-    &:before{
+  &:hover {
+    &:before {
       background-color: rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease-in-out;
     }
   }
 }
 
-.nav-category{
+//стиль для ссылки для категорий - nav (над статьей)
+.nav-category {
   padding: 20px 0;
   color: $texVeryDrGray;
-  a{
+
+  a {
     color: $texVeryDrGray;
   }
-  a.active{
+
+  a.active {
     color: $bgIconDon;
   }
+
   @include hover-link;
 }
-.news .container{
-  .article{
-    .img-news{
+
+.news .container {
+  .article {
+    .img-news {
       max-width: 100%;
       width: 100%;
       margin-bottom: 20px;
     }
 
-    h2{
-      @include fonBold ($fonPoppins, 2rem, $textblack)
+    h2 {
+      @include fonBold($fonPoppins, 2rem, $textblack)
     }
-    .info-time{
+
+    .info-time {
       color: $texVeryDrGray;
       margin-top: 10px;
       margin-bottom: 20px;
-      i{
+
+      i {
         margin-right: 10px;
       }
     }
-    p{
-      @include fon ($fonNunitoSans, 1.2rem, $texVeryDrGray);
+
+    p {
+      @include fon($fonNunitoSans, 1.2rem, $texVeryDrGray);
       margin-bottom: 2rem;
     }
+
     padding-bottom: 100px;
   }
-  .next-news{
-    .title-news{
+
+  .next-news {
+    .title-news {
       color: $textblack;
+
       &:hover {
-      color: #ca0523;
-      text-decoration: none;
-    }
-      h5{
-      font-weight: bold;
-      margin-top: 10px;
-      font-size: 0.9rem;
+        color: #ca0523;
+        text-decoration: none;
+      }
+
+      h5 {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 0.9rem;
       }
 
     }
+
     margin-bottom: 10px;
     border-bottom: 2px solid $texVeryDrGray;
-    .with-overlay{
+
+    .with-overlay {
       @include overlay;
     }
-    }
   }
+}
