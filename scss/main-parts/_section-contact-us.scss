@@ -41,10 +41,16 @@
         border-width: 2px;
         border-right: none;
       }
-textarea .form-control{
-  border: 2px;
+textarea {
   border-color: #EBECED;
   border-radius: 0;
+  border-width: 2px;
+  border-style: double;
+  .form-control{
+  border-color: #EBECED;
+  border-radius: 0;
+  border-width: 2px;
+}
 }
 
 
