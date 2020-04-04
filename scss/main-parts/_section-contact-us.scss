@@ -1,0 +1,62 @@
+.contact-us {
+  background-color: #fff;
+  margin: 75px 200px;
+  background-image: url("img/background.png");
+height: 681px;
+
+
+  h6 {
+    @include fon($fonPoppins, 16px, #1D252D);
+  }
+
+  h3 {
+    @include fonBold($fonPoppins, 40px, #1D252D);
+  }
+
+  .line {
+
+    border-bottom: 3px solid #ED4266;
+    width: 30px;
+     margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+.form-row{
+  border-radius: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+  .input-group-text {
+  background-color: #ffff;
+   border-right: none;
+}
+    input {
+      width: 80%;
+      padding: 20px;
+      @include fon($fonPoppins, 14px, $sineGoluboy);
+      border-left: none;
+    }
+
+}
+
+ .container .col-md-6 {
+    margin: 0;
+    padding: 0;
+
+   .input-group-prepend{
+
+     background-color: #ffff;
+   }
+
+ }
+}
+
+
+
+
+
+
+
+
