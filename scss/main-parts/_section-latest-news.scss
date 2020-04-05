@@ -1,45 +1,40 @@
-.latest-news{
-  margin-top: 95px;
+.latest-news {
   background-color: #F3F5F7;
-  height: 956px;
-  align-items:center;
-  .text-latest-news{
 
-    text-align: center;
+  h3 {
+    @include fon($fonPoppins, 20px, $sineGoluboy);
+    padding-top: 95px;
+
   }
-h3{
-  @include fon($fonPoppins, 20px, $sineGoluboy);
-   padding-top: 95px;
 
-}
-  h2{
+  h2 {
     @include fonBold($fonPoppins, 30px, $sineGoluboy);
+    margin-bottom: 25px;
   }
-p{
-  @include fon($fonNunitoSans, 18px, $sineGoluboy);
-  overflow: hidden;
-  height: 57px;
 
-}
-.card-deck{
-  margin: 60px 200px;
-.row{
- margin-bottom: -30px;
-  text-align: center;
-  @include fonBold($fonPoppins, 12px, #1D252D);
+  p {
+    @include fon($fonNunitoSans, 18px, $sineGoluboy);
+    margin-bottom: 50px;
+  }
 
-}
-  p{
-
-    small{
-      @include fonBold($fonPoppins, 12px, #1D252D);
-.col{
-  float: right;
-}
+  .latest-news__card {
+    margin-bottom: 110px;
+    .card-title {
+      margin: 25px;
+      h5 {
+        @include fonBold($fonPoppins, 20px, $sineGoluboy);
+        margin-bottom: 13px;
+      }
+      p {
+        @include fon($fonNunitoSans, 16px, $sineGoluboy);
+        margin-bottom: 20px;
+      }
+      .card-title_info {
+        @include fonBold($fonNunitoSans, 13px, $sineGoluboy);
+        img {
+          margin-right: 9px;
+        }
+      }
     }
-
   }
-}
-
-
 }

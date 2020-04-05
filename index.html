@@ -269,7 +269,7 @@
     </div>
 </section>
 <!-- Секция для "Волонтеров" -->
-<section class="section-volunteer">
+<section class="section-volunteer" style="background-image: url('img/section_volunteer_bg.png');">
     <div class="container">
         <div class="row section-volunteer-content">
             <div class="col-sm-12 col-md-6 col-lg-6">
@@ -438,7 +438,7 @@
     </div>
 </section>
 <!-- Секция для "Индикатор (Популярные Причины)" -->
-<section class="section-event">
+<section class="section-event" style="background: url('img/bg_event.png'), rgba(243, 245, 247, 0.95);">
     <div class="container">
         <h3 class="text-center">Upcoming Event</h3>
         <p class="text-center">The evening’s crawling rush hour traffic came to a complete halt in Kazipara in Dhaka as
@@ -1134,127 +1134,158 @@
 
 <section class="contact-us" style="background-image: url('img/background.png');">
     <div class="container">
-        <div class="col-12 col-lg-6">
-            <h6>Get in Touch</h6>
-            <h3>Contact Us</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h6>Get in Touch</h6>
+                <h3>Contact Us</h3>
 
-            <div class="ne-nado-tak"></div>
+                <div class="ne-nado-tak"></div>
 
-            <form class="needs-validation">
-                <div class="row">
-                <div class="col-6">
+                <form class="needs-validation">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
 
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <label for="tel" class="input-group-text" id="tel"><i
-                                        class="fas fa-phone-alt"></i></label>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <label for="tel" class="input-group-text" id="tel"><i
+                                            class="fas fa-phone-alt"></i></label>
+                                </div>
+                                <input type="tel" class="form-control" placeholder="Phone Number"
+                                       aria-label="Phone Number"
+                                       aria-describedby="basic-addon1">
                             </div>
-                            <input type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number"
-                                   aria-describedby="basic-addon1">
+
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <label for="name" class="input-group-text" id="name"><i
+                                            class="fas fa-tag"></i></label>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name"
+                                       aria-describedby="basic-addon1">
+                            </div>
+
                         </div>
-
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <label for="name" class="input-group-text" id="name"><i class="fas fa-tag"></i></label>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <label for="staticEmail" class="input-group-text" id="staticEmail"><i
+                                            class="fas fa-envelope"></i></label>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                                       aria-describedby="basic-addon1">
                             </div>
-                            <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name"
-                                   aria-describedby="basic-addon1">
-                        </div>
 
-                </div>
-
-                <div class="col-6">
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <label for="staticEmail" class="input-group-text" id="staticEmail"><i
-                                        class="fas fa-envelope"></i></label>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <label for="topic" class="input-group-text" id="Topic"><i
+                                            class="fas fa-tag"></i></label>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Topic" aria-label="Topic"
+                                       aria-describedby="basic-addon1">
                             </div>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email"
-                                   aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <label for="topic" class="input-group-text" id="Topic"><i
-                                        class="fas fa-tag"></i></label>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Topic" aria-label="Topic"
-                                   aria-describedby="basic-addon1">
                         </div>
                     </div>
-                </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="input-group mb-6">
-                        <div class="input-group-prepend">
-                            <label for="Message" class="input-group-text" id="Message"><i
-                                    class="fas fa-comment"></i></label>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group mb-6">
+                                <div class="input-group-prepend">
+                                    <label for="Message" class="input-group-text" id="Message"><i
+                                            class="fas fa-comment"></i></label>
+                                </div>
+                                <textarea type="text" class="form-control" placeholder="Message" aria-label="Message"
+                                          rows="4"
+                                          aria-describedby="basic-addon1" style="border-left: none"></textarea>
+                            </div>
                         </div>
-                        <textarea type="text" class="form-control" placeholder="Message" aria-label="Message" rows="4"
-                                  aria-describedby="basic-addon1" style="border-left: none" ></textarea>
                     </div>
-                </div>
-             </div>
-                <button class="btn btn-danger button-all">Send</button>
-            </form>
+                    <button class="btn btn-danger button-all">Send</button>
+                </form>
 
+            </div>
         </div>
     </div>
-
 </section>
-
-
 <!-- Секция последних новостей -->
 <section class="latest-news">
-
-    <div class="text-latest-news">
-<h3>Read Our</h3>
-<h2>Latest News</h2>
-    <p>Wintour attended North London Collegiate School in Stanmore, but dropped out aged 16. She soon took <br> a job at cult 1960s London fashion boutique Biba, before completing
-        <br>
-        a training programme at Harrods and landing a permanent role as editorial assistant at Harper’s & Queen magazine, now Harper’s Bazaar. In 1975, Wintour moved across the pond to become junior fashion editor at Harper’s Bazaar in the US, where she stayed for several years, going on to work at other now defunct titles including Viva and Savvy until the early 1980s.</p>
+    <div class="container">
+        <div class="text-center">
+            <h3>Read Our</h3>
+            <h2>Latest News</h2>
+            <p>Wintour attended North London Collegiate School in Stanmore, but dropped out aged 16. She soon took <br>
+                a job at cult 1960s London fashion boutique Biba, before completing
+                a training programme at Harrods and landing a permanent role as editorial assistant at Harper’s & Queen
+                magazine, now Harper’s Bazaar. In 1975, Wintour moved across the pond to become junior fashion editor at
+                Harper’s Bazaar in the US, where she stayed for several years, going on to work at other now defunct
+                titles
+                including Viva and Savvy until the early 1980s.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 latest-news__card">
+                <div class="card">
+                    <img src="img/latest-news1.png" class="card-img-top" alt="ANNA WINTOUR">
+                    <div class="card-title">
+                        <h5>ANNA WINTOUR AT 70: WHY THE VOGUE EDITOR PLAYS </h5>
+                        <p>London in 1949, Anna Wintour came from a media family. She is the eldest
+                            daughter of the late Charles Wintour, </p>
+                        <div class="row justify-content-around">
+                            <div class="card-title_info">
+                                <img src="img/icon-latest-news.png" alt="Mr man"> Toby Halvorson
+                            </div>
+                            <div class="card-title_info">
+                                <span>June 16, 2020</span>
+                            </div>
+                            <div class="card-title_info">
+                                <a href="#" title="Share"><em class="fas fa-share-alt"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 latest-news__card">
+                <div class="card">
+                    <img src="img/latest-news2.png" class="card-img-top" alt="ANNA WINTOUR">
+                    <div class="card-title">
+                        <h5>ANNA WINTOUR AT 70: WHY THE VOGUE EDITOR PLAYS </h5>
+                        <p>London in 1949, Anna Wintour came from a media family. She is the eldest
+                            daughter of the late Charles Wintour, </p>
+                        <div class="row justify-content-around">
+                            <div class="card-title_info">
+                                <img src="img/icon-latest-news.png" alt="Mr man"> Toby Halvorson
+                            </div>
+                            <div class="card-title_info">
+                                <span>June 16, 2020</span>
+                            </div>
+                            <div class="card-title_info">
+                                <a href="#" title="Share"><em class="fas fa-share-alt"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 latest-news__card">
+                <div class="card">
+                    <img src="img/latest-news3.png" class="card-img-top" alt="ANNA WINTOUR">
+                    <div class="card-title">
+                        <h5>ANNA WINTOUR AT 70: WHY THE VOGUE EDITOR PLAYS </h5>
+                        <p>London in 1949, Anna Wintour came from a media family. She is the eldest
+                            daughter of the late Charles Wintour, </p>
+                        <div class="row justify-content-around">
+                            <div class="card-title_info">
+                                <img src="img/icon-latest-news.png" alt="Mr man"> Toby Halvorson
+                            </div>
+                            <div class="card-title_info">
+                                <span>June 16, 2020</span>
+                            </div>
+                            <div class="card-title_info">
+                                <a href="#" title="Share"><em class="fas fa-share-alt"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-<div class="cards-part">
-    <div class="card-deck">
-        <div class="card">
-            <img src="img/latest-news1.png" class="card-img-top" alt="ANNA WINTOUR">
-            <div class="card-body">
-                <h5 class="card-title">ANNA WINTOUR AT 70: WHY THE VOGUE EDITOR PLAYS </h5>
-                <p class="card-text">London in 1949, Anna Wintour came from a media family. She is the eldest daughter of the late Charles Wintour, </p>
-                <div class="row">   <p class="col-lg-6"><small class="text-muted" style="font-size: 12px"><img src="img/icon-latest-news.png" alt="Mr man"> Toby Halvorson</small> </p><p class="col-lg-4"><small>June 16, 2020  <a href="#" title="Share"><div class="col-lg-2"><em class="fas fa-share-alt"></em></div></a></small></p>
-                </div>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/latest-news2.png" class="card-img-top" alt="ANNA WINTOUR">
-            <div class="card-body">
-                <h5 class="card-title">ANNA WINTOUR AT 70: WHY THE VOGUE EDITOR PLAYS </h5>
-                <p class="card-text">TLondon in 1949, Anna Wintour came from a media family. She is the eldest daughter of the late Charles Wintour, </p>
-                <div class="row">   <p class="col-lg-6"><small class="text-muted" style="font-size: 12px"><img src="img/icon-latest-news.png" alt="Mr man"> Toby Halvorson</small> </p><p class="col-lg-4"><small>June 16, 2020  <a href="#" title="Share"><div class="col-lg-2"><em class="fas fa-share-alt"></em></div></a></small></p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/latest-news3.png" class="card-img-top" alt="ANNA WINTOUR">
-            <div class="card-body">
-                <h5 class="card-title">ANNA WINTOUR AT 70: WHY THE VOGUE EDITOR PLAYS </h5>
-                <p class="card-text">London in 1949, Anna Wintour came from a media family. She is the eldest daughter of the late Charles Wintour, </p>
-                <div class="row">   <p class="col-lg-6"><small class="text-muted" style="font-size: 12px"><img src="img/icon-latest-news.png" alt="Mr man"> Toby Halvorson</small> </p><p class="col-lg-4"><small>June 16, 2020  <a href="#" title="Share"><div class="col-lg-2"><em class="fas fa-share-alt"></em></div></a></small></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
 </section>
-
-
-
-
-
 <!-- Секция для курусели c партнерами -->
 <div class="news-section student">
     <div class="news-section-carousel carousel" data-min-items="4">
@@ -1311,7 +1342,7 @@
     <em class="fas fa-angle-up"></em>
 </button>
 <!-- FOOTER  -->
-<footer>
+<footer style="background-image: url('img/footer_bg.png');">
     <div class="container">
         <div class="row footer-content">
             <div class="col-sm-12 col-md-12 col-lg-4 footer-content__social">
