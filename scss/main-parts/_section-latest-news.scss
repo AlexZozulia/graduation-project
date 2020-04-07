@@ -15,12 +15,19 @@
   p {
     @include fon($fonNunitoSans, 18px, $sineGoluboy);
     margin-bottom: 50px;
+    height: 58px;
+    overflow: hidden;
   }
+.card{
+  border-radius: 0;
+  margin-bottom: 100px;
+
 
   .latest-news__card {
     margin-bottom: 110px;
     .card-title {
       margin: 25px;
+
       h5 {
         @include fonBold($fonPoppins, 20px, $sineGoluboy);
         margin-bottom: 13px;
@@ -28,12 +35,13 @@
       p {
         @include fon($fonNunitoSans, 16px, $sineGoluboy);
         margin-bottom: 20px;
+        height: 70px;
       }
       .card-title_info {
         @include fonBold($fonNunitoSans, 13px, $sineGoluboy);
         img {
           margin-right: 9px;
-        }
+        }}
       }
     }
   }

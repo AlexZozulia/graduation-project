@@ -68,6 +68,7 @@
     height: 56px;
      @include fonBold($fonNunitoSans, 16px, #ffff);
     padding-top: 15px;
+    float: right;
 
   }
   @media (max-width: 992px){
