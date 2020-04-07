@@ -3,26 +3,21 @@
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 50%;
-
   h6 {
     @include fon($fonPoppins, 16px, #1D252D);
     padding-top: 65px;
     padding-bottom: 30px;
   }
-
   h3 {
     @include fonBold($fonPoppins, 40px, #1D252D);
   }
-
-  .ne-nado-tak {
-
+  .form-for-contact {
     border-bottom: 3px solid #ED4266;
     width: 30px;
     margin-bottom: 40px;
     margin-top: 30px;
   }
   .needs-validation{
-
     input {
       width: 80%;
       padding: 25px 0;
@@ -31,6 +26,7 @@
       border-color: #EBECED;
       border-radius: 0;
       border-width: 2px;
+      box-shadow: none;
     }
    .input-group-prepend label{
         background-color: #ffff;
@@ -39,26 +35,29 @@
         border-width: 2px;
         border-right: none;
       }
+    .fa-comment{
+      margin-top: -66px;
+    }
 textarea {
   border-color: #EBECED;
   border-radius: 0;
   border-width: 2px;
-  border-style: double;
+  border-style: solid;
+  box-shadow: none;
+  outline: none;
+  margin-left: -10px;
+
   .form-control{
   border-color: #EBECED;
   border-radius: 0;
   border-width: 2px;
-}
-}
 
-
+  }
+}
   .btn{
-    margin: 50px 0px;
+    margin: 50px 0;
   }
   }
-
-
-
 }
 
 

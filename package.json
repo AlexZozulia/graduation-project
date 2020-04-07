@@ -1,7 +1,7 @@
 {
   "name": "gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Использую bootstrap, gulp, иконки с fontawesome, LIGHTBOX.",
   "main": "index.js",
   "dependencies": {
     "acorn": ">=5.7.4",
@@ -30,5 +30,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexZozulia/graduation-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexZozulia/graduation-project/issues"
+  },
+  "homepage": "https://github.com/AlexZozulia/graduation-project#readme"
 }
