@@ -9,7 +9,7 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "lightbox2": "^2.11.1",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.6"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.0",
